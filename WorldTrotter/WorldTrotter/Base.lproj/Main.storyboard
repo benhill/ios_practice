@@ -52,6 +52,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="farenheitFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="KXp-2a-QZi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="aVI-Na-84C"/>
                                 </connections>
                             </textField>
                         </subviews>
