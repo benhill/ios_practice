@@ -12,6 +12,32 @@ class ConversionViewController: UIViewController, UITextFieldDelegate{
         return nf
     }()
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        let calendar = Calendar.current
+        let startTimeComponent = DateComponents(calendar: calendar, hour: 8)
+        let endTimeComponent   = DateComponents(calendar: calendar, hour: 17, minute: 30)
+        
+        let now = Date()
+        let startOfToday = calendar.startOfDay(for: now)
+        let startTime    = calendar.date(byAdding: startTimeComponent, to: startOfToday)!
+        let endTime      = calendar.date(byAdding: endTimeComponent, to: startOfToday)!
+        
+        if startTime <= now && now <= endTime {
+            self.view.backgroundColor = UIColor.lightGray
+        } else {
+            self.view.backgroundColor = randomColor()
+        }
+    }
+    
+    func randomColor() -> UIColor{
+        let red = CGFloat(drand48())
+        let green = CGFloat(drand48())
+        let blue = CGFloat(drand48())g
+        return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

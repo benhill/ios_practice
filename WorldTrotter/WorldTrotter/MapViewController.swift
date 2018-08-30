@@ -7,9 +7,4 @@ class MapViewController: UIViewController{
         
         print("MapViewController loaded its view.")
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        print("MapViewController went boom.")
-    }
 }

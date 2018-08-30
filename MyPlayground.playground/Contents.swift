@@ -1,39 +1,16 @@
-import UIKit
+import Foundation
 
-var myInt: Int?
-var myInt2: Int?
-var myInt3: Int?
-var error: String
-myInt = 667
-myInt2 = 1
-myInt3 = 1
+let calendar = Calendar.current
+let startTimeComponent = DateComponents(calendar: calendar, hour: 8)
+let endTimeComponent   = DateComponents(calendar: calendar, hour: 17, minute: 30)
 
-if let i1 = myInt,
-    let i2 = myInt2,
-    let i3 = myInt3
-{
-    i1 / i2 / i3
+let now = Date()
+let startOfToday = calendar.startOfDay(for: now)
+let startTime    = calendar.date(byAdding: startTimeComponent, to: startOfToday)!
+let endTime      = calendar.date(byAdding: endTimeComponent, to: startOfToday)!
+
+if startTime <= now && now <= endTime {
+    print("between 8 AM and 5:30 PM")
 } else {
-    error = "oops"
+    print("not between 8 AM and 5:30 PM")
 }
-
-
-let nameByParkingSpace = [13: "Alice", 27: "Bob", 65: "Joe"]
-
-for (space, name) in nameByParkingSpace {
-    let permit = "Space \(space): \(name)"
-}
-
-enum PieType: Int{
-    case apple = 0
-    case peach
-    case coconut
-}
-
-let pieRawValue = PieType.coconut.rawValue
-
-if let pieType = PieType(rawValue: pieRawValue) {
-    
-}
-
-
