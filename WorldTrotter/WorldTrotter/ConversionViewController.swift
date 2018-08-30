@@ -14,6 +14,9 @@ class ConversionViewController: UIViewController, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("ConversionController loaded its view.")
+        
         updateCelsiusLabel()
     }
     
@@ -36,7 +39,7 @@ class ConversionViewController: UIViewController, UITextFieldDelegate{
         var return_value = true
         
         let existingTextHasDecimalSeparator = textField.text?.range(of: ".")
-        let replcementTextHasDecimalSeparator = string.range(of: ".")
+        let replcementTextHasDecimalSeparator = string.range(of: ",")
         if existingTextHasDecimalSeparator != nil, replcementTextHasDecimalSeparator != nil {
             return_value = false
         }

@@ -1,35 +1,39 @@
-//: Playground - noun: a place where people can play
-
 import UIKit
 
-//I am a string
-let str: String = "monkey"
+var myInt: Int?
+var myInt2: Int?
+var myInt3: Int?
+var error: String
+myInt = 667
+myInt2 = 1
+myInt3 = 1
 
-//I am an array
-var arr: [Int] = [123, 345]
-var arrNew: Array<Int> = [123, 345]
-arr[0]
-arrNew[0]
-
-//I am a set
-var set: Set<String> = ["foo", "boo"]
-set.count
-
-//I am a dictionary
-var dict: [String:Int] = ["goodbye": 1, "monkey": 2]
-dict["goodbye"]
-
-let myString = String("Hello")
-let myInt = Int(1)
+if let i1 = myInt,
+    let i2 = myInt2,
+    let i3 = myInt3
+{
+    i1 / i2 / i3
+} else {
+    error = "oops"
+}
 
 
+let nameByParkingSpace = [13: "Alice", 27: "Bob", 65: "Joe"]
 
+for (space, name) in nameByParkingSpace {
+    let permit = "Space \(space): \(name)"
+}
 
+enum PieType: Int{
+    case apple = 0
+    case peach
+    case coconut
+}
 
+let pieRawValue = PieType.coconut.rawValue
 
-
-
-
-
+if let pieType = PieType(rawValue: pieRawValue) {
+    
+}
 
 
