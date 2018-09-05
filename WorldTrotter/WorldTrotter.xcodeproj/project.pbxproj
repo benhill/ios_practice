@@ -14,6 +14,7 @@
 		623C862B212A223A00EA2449 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C862A212A223A00EA2449 /* WorldTrotterTests.swift */; };
 		623C8636212A223A00EA2449 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C8635212A223A00EA2449 /* WorldTrotterUITests.swift */; };
 		623C8644212B6C7F00EA2449 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C8643212B6C7F00EA2449 /* ConversionViewController.swift */; };
+		623C86462140834500EA2449 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C86452140834500EA2449 /* WebViewController.swift */; };
 		62511DEE21376345003A6543 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62511DED21376345003A6543 /* MapKit.framework */; };
 		62511DF0213773A4003A6543 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62511DEF213773A4003A6543 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		623C8635212A223A00EA2449 /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		623C8637212A223A00EA2449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		623C8643212B6C7F00EA2449 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		623C86452140834500EA2449 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		62511DED21376345003A6543 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		62511DEF213773A4003A6543 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 				623C861E212A223A00EA2449 /* LaunchScreen.storyboard */,
 				623C8621212A223A00EA2449 /* Info.plist */,
 				623C8643212B6C7F00EA2449 /* ConversionViewController.swift */,
+				623C86452140834500EA2449 /* WebViewController.swift */,
 			);
 			path = WorldTrotter;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				623C8644212B6C7F00EA2449 /* ConversionViewController.swift in Sources */,
 				62511DF0213773A4003A6543 /* MapViewController.swift in Sources */,
 				623C8616212A223900EA2449 /* AppDelegate.swift in Sources */,
+				623C86462140834500EA2449 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
