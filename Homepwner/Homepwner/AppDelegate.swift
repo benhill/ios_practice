@@ -1,27 +1,21 @@
-//
-//  AppDelegate.swift
-//  Homepwner
-//
-//  Created by Ben Hill on 9/11/18.
-//  Copyright © 2018 stagey. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+	
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         let itemStore = ItemStore()
+        let imageStore = ImageStore()
         
         let navController = window!.rootViewController as! UINavigationController
         let itemsController = navController.topViewController as! ItemsViewController
+        
         itemsController.itemStore = itemStore
+        itemsController.imageStore = imageStore
         
         return true
     }

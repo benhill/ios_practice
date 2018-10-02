@@ -1,7 +1,7 @@
 import UIKit
 
 class DetailViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
-    
+    // MARK: Outlets
     @IBOutlet var nameField: UITextField!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var valueField: UITextField!
@@ -11,6 +11,7 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     
     @IBAction func takePicture(_ sender: UIBarButtonItem) {
         let imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
         
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             imagePicker.sourceType = .camera
@@ -23,11 +24,23 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
         present(imagePicker, animated: true, completion: nil)
     }
     
+    @IBAction func clearImage(_ sender: UIButton) {
+        if imageStore.image(forKey: item.itemKey) != nil {
+            imageStore.deleteImage(forKey: item.itemKey)
+            imageView.image = nil
+        }
+    }
+    
+    // MARK: Variables
     var item: Item!
     let numberFormatter = NumberFormatter()
+    var imageStore: ImageStore!
     
+    // MARK: Functions
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let image = info[UIImagePickerControllerEditedImage] as! UIImage
+        
+        imageStore.setImage(image, forKey: item.itemKey)
         imageView.image = image
         dismiss(animated: true, completion: nil)
     }
@@ -48,6 +61,10 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
         serialNumberField.text = item.serialNumber
         valueField.text = numberFormatter.string(from: NSNumber(value: item.valueInDollars))
         dateLabel.text = dateFormatter.string(from: item.dateCreated)
+        
+        let key = item.itemKey
+        let imageToDisplay = imageStore.image(forKey: key)
+        imageView.image = imageToDisplay
     }
     
     override func viewWillDisappear(_ animated: Bool) {

@@ -171,8 +171,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="r5T-am-oiR">
-                                        <rect key="frame" x="0.0" y="114.5" width="359" height="428.5"/>
+                                        <rect key="frame" x="0.0" y="114.5" width="359" height="397.5"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0V-Gg-uxK">
+                                        <rect key="frame" x="0.0" y="513" width="359" height="30"/>
+                                        <state key="normal" title="Clear Image"/>
+                                        <connections>
+                                            <action selector="clearImage:" destination="vJk-2R-imq" eventType="touchUpInside" id="haM-rH-yKL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="gbB-JF-xN1" firstAttribute="leading" secondItem="fjR-ys-2rj" secondAttribute="leading" id="RNK-dD-dZe"/>
