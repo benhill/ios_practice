@@ -85,11 +85,6 @@
 		623C8647214831FD00EA2449 = {
 			isa = PBXGroup;
 			children = (
-				6252B80A2154536F00607DF1 /* DetailViewController.swift */,
-				623C86872151B75D00EA2449 /* ItemCell.swift */,
-				623C86812148328400EA2449 /* ItemsViewController.swift */,
-				623C86852148399900EA2449 /* ItemStore.swift */,
-				623C86832148347800EA2449 /* Item.swift */,
 				623C8652214831FD00EA2449 /* Homepwner */,
 				623C8667214831FF00EA2449 /* HomepwnerTests */,
 				623C8672214831FF00EA2449 /* HomepwnerUITests */,
@@ -110,6 +105,11 @@
 		623C8652214831FD00EA2449 /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
+				623C86832148347800EA2449 /* Item.swift */,
+				623C86852148399900EA2449 /* ItemStore.swift */,
+				623C86812148328400EA2449 /* ItemsViewController.swift */,
+				623C86872151B75D00EA2449 /* ItemCell.swift */,
+				6252B80A2154536F00607DF1 /* DetailViewController.swift */,
 				623C8653214831FD00EA2449 /* AppDelegate.swift */,
 				623C8657214831FD00EA2449 /* Main.storyboard */,
 				623C865A214831FF00EA2449 /* Assets.xcassets */,
