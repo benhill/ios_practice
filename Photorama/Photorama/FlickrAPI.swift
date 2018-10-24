@@ -57,13 +57,11 @@ struct FlickrAPI {
                 return .failure(FlickrError.invaludJSONData)
             }
             var finalPhotos = [Photo]()
-            
             for photoJSON in photosArray {
                 if let photo = photo(fromJson: photoJSON) {
                     finalPhotos.append(photo)
                 }
             }
-            
             return .success(finalPhotos)
         } catch let error{
             return .failure(error)
@@ -75,13 +73,15 @@ struct FlickrAPI {
     }
     
     private static func photo(fromJson json: [String:Any]) -> Photo? {
+        
         guard
         let photoID = json["id"] as? String,
         let title = json["title"] as? String,
-        let dateString = json["dateTaken"] as? String,
+        let dateString = json["datetaken"] as? String,
         let photoURLString = json["url_h"] as? String,
         let url = URL(string: photoURLString),
             let dateTaken = dateFormatter.date(from: dateString) else{
+                
                 return nil
         }
         return Photo(title: title, photoID: photoID, remoteURL: url, dateTaken: dateTaken)
