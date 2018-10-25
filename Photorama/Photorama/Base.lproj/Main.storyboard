@@ -32,7 +32,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Photorama" id="PzE-1c-tdG"/>
                     <connections>
-                        <outlet property="view" destination="A06-WM-lCe" id="aZl-Uy-ppX"/>
+                        <outlet property="imageView" destination="A06-WM-lCe" id="uAe-BE-SPF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
