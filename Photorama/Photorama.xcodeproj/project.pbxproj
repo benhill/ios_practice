@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62311F6A2187D9AF0023A275 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62311F692187D9AF0023A275 /* PhotoDataSource.swift */; };
+		62311F6C2187DC1D0023A275 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62311F6B2187DC1D0023A275 /* PhotoCollectionViewCell.swift */; };
+		62311F6E2187E7760023A275 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62311F6D2187E7760023A275 /* ImageStore.swift */; };
+		62311F702187E87E0023A275 /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62311F6F2187E87E0023A275 /* PhotoInfoViewController.swift */; };
 		6280A784217EC99B0088C120 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6280A783217EC99B0088C120 /* Photo.swift */; };
 		62DF492521755AFD0053F755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DF492421755AFD0053F755 /* AppDelegate.swift */; };
 		62DF492A21755AFD0053F755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62DF492821755AFD0053F755 /* Main.storyboard */; };
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62311F692187D9AF0023A275 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
+		62311F6B2187DC1D0023A275 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		62311F6D2187E7760023A275 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageStore.swift; path = ../../Homepwner/Homepwner/ImageStore.swift; sourceTree = "<group>"; };
+		62311F6F2187E87E0023A275 /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
 		6280A783217EC99B0088C120 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		62DF492121755AFD0053F755 /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62DF492421755AFD0053F755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				62DF492421755AFD0053F755 /* AppDelegate.swift */,
+				62311F6D2187E7760023A275 /* ImageStore.swift */,
 				62DF492821755AFD0053F755 /* Main.storyboard */,
 				62DF492B21755AFF0053F755 /* Assets.xcassets */,
 				62DF492D21755AFF0053F755 /* LaunchScreen.storyboard */,
@@ -112,6 +121,9 @@
 				62DF495421755D560053F755 /* FlickrAPI.swift */,
 				62DF4956217561540053F755 /* PhotoStore.swift */,
 				6280A783217EC99B0088C120 /* Photo.swift */,
+				62311F692187D9AF0023A275 /* PhotoDataSource.swift */,
+				62311F6B2187DC1D0023A275 /* PhotoCollectionViewCell.swift */,
+				62311F6F2187E87E0023A275 /* PhotoInfoViewController.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -268,8 +280,12 @@
 				62DF495521755D560053F755 /* FlickrAPI.swift in Sources */,
 				62DF495321755B410053F755 /* PhotosViewController.swift in Sources */,
 				62DF4957217561540053F755 /* PhotoStore.swift in Sources */,
+				62311F6E2187E7760023A275 /* ImageStore.swift in Sources */,
+				62311F6A2187D9AF0023A275 /* PhotoDataSource.swift in Sources */,
+				62311F6C2187DC1D0023A275 /* PhotoCollectionViewCell.swift in Sources */,
 				62DF492521755AFD0053F755 /* AppDelegate.swift in Sources */,
 				6280A784217EC99B0088C120 /* Photo.swift in Sources */,
+				62311F702187E87E0023A275 /* PhotoInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
